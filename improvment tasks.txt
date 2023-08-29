@@ -1,0 +1,8 @@
+1.css,js external==
+2.form validation==
+3.media query different sizes
+	message us to know - bottom
+	small padding
+4.foreach staff details
+5.commenting
+6.convert images to webp

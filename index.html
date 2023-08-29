@@ -5,65 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,700,0,0" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="icon" type="image/x-icon" href="images/clg_logo.png">
+    <link rel="icon" type="image/x-icon" href="images/clg_logo.ico">
     <title>GPTC Kunnnamkulam | Home</title>
-	<style>
-
-		.bg-black{
-			background-color: black;
-		}
-		.bg-brown{
-			background-color: rgba(162, 42, 42, 0.659);
-		}
-		.slide-caption{
-			text-shadow: 2px 7px 5px rgba(0,0,0,0.3), 0px -4px 10px rgba(255,255,255,0.3);
-		}
-		.footer-link{
-			background-image: linear-gradient(
-   			to right,
-			#54b3d6,
-			#54b3d6 50%,
-			beige 50%
-			);
-			background-size: 200% 100%;
-			background-position: -100%;
-			display: inline-block;
-			padding: 5px 0;
-			position: relative;
-			-webkit-background-clip: text;
-			-webkit-text-fill-color: transparent;
-			transition: all 0.3s ease-in-out;
-		}
-
-		.footer-link:before{
-			content: '';
-			background: #54b3d6;
-			display: block;
-			position: absolute;
-			bottom: -3px;
-			left: 0;
-			width: 0;
-			height: 3px;
-			transition: all 0.3s ease-in-out;
-		}
-
-		.footer-link:hover {
-			background-position: 0;
-		}
-
-		.footer-link:hover::before{
-			width: 100%;
-		}
-	</style>
-
-	</style>
+	<link rel="stylesheet" type="text/css" href="styles/styles.css">
   </head>
   <body>
+	<!-- This website is completely made up of basic HTML,CSS and JS.To improve styling in the site we have used bootstrap 5 -->
 
+	<!-- navbar section -->
     <header>
 		<nav class="navbar navbar-expand-lg navbar-light">
 			<div class="container-fluid mt-2">
-			  <img src="images/clg_logo.png" alt="Clg Logo" width="50px" height="50px" class="mx-4">
+			  <img src="images/clg_logo.ico" alt="Clg Logo" width="60px" height="60px" class="mx-4">
 			  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			  </button>
@@ -80,14 +33,11 @@
 					</ul>
 				  </li>
 				  <li class="nav-item px-3">
-					<a class="nav-link" href="#">Academic</a>
-				  </li>
-				  <li class="nav-item px-3">
 					<a class="nav-link" href="about.html">About Us</a>
 				  </li>
 				  <li class="nav-item px-3">
 					  <div class="btn-group" role="group" aria-label="Continue to account">
-						  <a href="login.html" class="btn btn-danger">Sign In</a>
+						  <a href="login.html" class="btn btn-danger">Log In</a>
 						  <a href="sign-up.html" class="btn btn-primary">Sign Up</a>
 					  </div>
 				  </li>
@@ -97,35 +47,36 @@
 		  </nav>
 	</header>
     
+	<!-- first container of containing a college intro-->
 	<section class="intro">
-		<div class="container-fluid" style="height: 625px;">
+		<div class="container-fluid cover-responsive" style="height: 625px;">
 			<div class="row p-4 h-100">
 			  <div class="col align-self-center">
 				<h1 class="display-2">Government Polytechnic College Kunnnamkulam</h1>
-				<h2 class="h3 border-4 rounded-3 border-danger bg-success w-50 text-center d-md-inline ">AICTE Accredited</h2>
+				<h2 class="h3 border-4 rounded-3 border-danger bg-success w-auto text-center p-1">AICTE Accredited</h2>
 				<h3 class="h2">Time to upgrade</h3>
 			  </div>
 			  <div class="col d-none d-md-block">
-				<img src="images/Clg-gate.png" alt="Clg gate picture" class="img-fluid h-50  rounded-circle">
+				<img src="images/Clg-gate.webp" alt="Clg gate picture" class="img-fluid h-50  rounded-circle">
 			  </div>
 			  <div class="col d-none d-md-block align-self-center">
-				<img src="images/academic-sq-block.png" alt="Clg academic block" class="img-fluid rounded-circle align-top">
+				<img src="images/academic-sq-block.webp" alt="Clg academic block" class="img-fluid rounded-circle align-top">
 			  </div>
 			</div>
 		  </div>
 	</section>
 
-
+	<!-- college's vision and mission -->
     <div class="container-fluid text-center">
       <div class="row align-content-center">
-        <div class="col-6 bg-success p-4">
+        <div class="col-lg bg-success p-4">
 			<h1 class="h1">Our Vision</h1>
 			<p class="display">
 				To be a center of excellence by giving appropriate training for students 
 				and exposing them to the latest technology that caters to the current need of the industry
 			</p>
         </div>
-        <div class="col-6 bg-info p-4">
+        <div class="col-lg bg-info p-4">
 			<h1 class="h1">Our Mission</h1>
 			<p class="display">
 				To facilitate high quality education in engineering and technology through a teaching 
@@ -135,15 +86,17 @@
       </div>
     </div>
 
+	<!-- Cuurent events section of college -->
 	<div class="container-fluid bg-primary">
 		<div class="row">
 			<p class="display-6 text-start fs-3 px-3 py-1">Events </p>
 		</div>
 	</div>
 
-	<div class="container bg-brown rounded my-5 px-3">
+	<!-- Principal's Message -->
+	<div class="container bg-brown rounded my-lg-5 px-3">
 		<div class="row p-2">
-			<div class="col py-5">
+			<div class="col py-5 mx-sm-3">
 				<img src="images/principal" alt="Principal" width="250px" height="200px" class="rounded-circle border-2 border-dark">
 			</div>
 			<div class="col py-5">
@@ -157,6 +110,7 @@
 		</div>
 	</div>
 
+	<!-- Currently offered courses using silde -->
 	<div class="container-lg h-50 my-5 py-2" >
 		<div class="row">
 			<div class="col-md-6">
@@ -200,6 +154,7 @@
 					</button>
 				</div>
 			</div><br>
+			<!-- Offered facilitates -->
 			<div class="col-md-6 d-md-block">
 				<h3 class="text-start h4 pb-2">Offered Facilities</h3>
 				<div class="row pt-1">
@@ -252,6 +207,7 @@
 		</div>
 	</div>
 
+	<!-- Some statitics about the college using google material icon and bootstap icons-->
 	<div class="container-fluid bg-primary text-center">
 		<div class="row align-content-between py-2">
 			<div class="col-4">
@@ -276,24 +232,18 @@
 				<p class="display-4">720+</p>
 				<p class="h-4">No. of students Enrolled</p>
 			</div>
-<!-- 			<div class="col-3">
-				<span class="material-symbols-outlined" style="font-size: 50px;">
-					groups
-					</span>
-				<p class="display-4">45646</p>
-				<p class="h-4">Total Students</p>
-			</div> -->
 		</div>
 	</div>
 
 	<footer>
+		<!-- message sending section in footer using smtpJS -->
 		<div class="container-fluid bg-dark text-light pt-4 align-items-center border-top">
 			<br>
-			<div class="row">
-				<div class="col border-end border-1">
+			<div class="row ">
+				<div class="col-lg border-lg-end border-1">
 					<p class="display-1 text-primary text-center">Message to Us</p>
 				</div>
-				<div class="col">
+				<div class="col-lg px-4">
 					<form onsubmit="sendmsg(); reset(); return false;">
 						<div class="mb-3">
 							<label for="name" class="form-label">Name : </label>
@@ -315,23 +265,28 @@
 				</div>
 			</div>
 			<br><br><br>
+			<!-- College address and contact details in footer -->
 			<div class="row p-3">
-				<div class="col-6">
+				<div class="col-lg">
 					<h6 class="h6 border-bottom border-primary w-50 pb-1">Address</h6>
-					<p class="align-items-start ps-3 pb-3">
-						Government Polytechnic College<br>
-						Kizhoor P.O. Kunnamkulam<br>
-						Thrissur DT. Kerala<br>
-						PIN: 680523<br>
+					<p class="ps-3">
+						<address>
+							Government Polytechnic College<br>
+							Kizhoor P.O. Kunnamkulam<br>
+							Thrissur DT. Kerala<br>
+							PIN: 680523<br>
+						</address>
 					</p>
 					<h6 class="h6 border-bottom border-primary w-50 pb-1">Contact Us</h6>
-					<p class="align-items-start ps-3 pb-3">
-						Email Id:  polykkm@yahoo.co.in<br>
-						Phone No: 04885226581<br>
-						Mobile No : 9400006442
+					<p class="ps-3">
+						<address>
+							Email Id:  polykkm@yahoo.co.in<br>
+							Phone No: 04885226581<br>
+							Mobile No : 9400006442
+						</address>
 					</p>
 				</div>
-				<div class="col-6">
+				<div class="col-lg">
 					<h1 class="h2 text-primary">Quick Links</p>
 						<hr>
 					<a href="https://www.sbte.kerala.gov.in/" data-bs-toggle="tooltip" data-bs-placement="top" title="Redirects SBTE home Page" class="footer-link">SBTE</a>
@@ -341,6 +296,14 @@
 					<a href="https://spark.gov.in/" data-bs-toggle="tooltip" data-bs-placement="top" title="Spark" class="footer-link">Spark</a>
 				</div>
 			</div>
+			<div class="row justify-content-center">
+
+				<a href="#" class="btn btn-warning w-auto m-3">
+					<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-square" viewBox="0 0 16 16">
+						<path fill-rule="evenodd" d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm8.5 9.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z"/>
+					</svg>
+				</a>
+			</div>
 			<div class="row">
 				<div class="col-12 text-center bottom-0 bg-black">
 					<p>COPYRIGHT © 2023,Government Polytechnic College Kunnamkulam | ALL RIGHTS RESERVED</p>
@@ -349,25 +312,7 @@
 		</div>
 	</footer>
 
-	<script>
-		function sendmsg(){
-			var name=document.getElementById("name").value
-			var mobile=document.getElementById("ph").value
-			var msg=document.getElementById("message").value
-			var result = name.concat(" is sent an message to you !.\n", msg, ".My phone number is  ", mobile);
-			Email.send({
-				Host : "smtp.elasticemail.com",
-				Username : "jerinmr51@gmail.com",
-				Password : "D1C6814A5431044C2AB6174C238F61E39894",
-				To : 'jerinmr15@outlook.com',
-				From : "jerinmr51@gmail.com",
-				Subject : "A new message from a Site Visitor",
-				Body : result,
-			}).then(
-			message => alert(message)
-			);
-		}
-	</script>
+	<script src="scripts/script.js"></script>
 	<script src="https://smtpjs.com/v3/smtp.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
   </body>
