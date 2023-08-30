@@ -44,8 +44,6 @@ const password_error = document.getElementById("pass-warn")
 
 
 form.addEventListener("submit",(e) => {
-  console.log(name.value.match(letterExp))
-
 
   if(name.value === '' || name.value == null){
     e.preventDefault()
