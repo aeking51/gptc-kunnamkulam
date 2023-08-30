@@ -1,0 +1,89 @@
+/* For special purpose */
+.bg-black{
+    background-color: black;
+}
+.bg-brown{
+    background-color: rgba(162, 42, 42, 0.659);
+}
+.slide-caption{
+    text-shadow: 2px 7px 5px rgba(0,0,0,0.3), 0px -4px 10px rgba(255,255,255,0.3);
+}
+
+/* Footer styles in all pages */
+.footer-link{
+    background-image: linear-gradient(
+       to right,
+    #54b3d6,
+    #54b3d6 50%,
+    white 50%
+    );
+    background-size: 200% 100%;
+    background-position: -100%;
+    display: inline-block;
+    padding: 5px 0;
+    position: relative;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.3s ease-in-out;
+}
+
+.footer-link:before{
+    content: '';
+    background: #54b3d6;
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    transition: all 0.3s ease-in-out;
+}
+
+.footer-link:hover {
+    background-position: 0;
+}
+
+.footer-link:hover::before{
+    width: 100%;
+}
+
+/* form-line is for login page and sign up page */
+.form-line{
+    border: 1px solid white ;
+    border-bottom: 3px solid #0d6efd;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.form-line::placeholder{
+    padding-left: 3px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+}
+.form-line:focus{
+    outline: none;
+    box-shadow: 0px 4px 0px 0px #0d6dfd41;
+    padding: 5px;
+    transition: 0.2s;
+    border-radius: 1px;
+}
+
+/*index cover page for mobile devices */
+@media screen and (max-width: 740px) {
+    .cover-responsive{
+        background-image: url("https://img.freepik.com/free-vector/wave-background_53876-115944.jpg?w=740&t=st=1693319052~exp=1693319652~hmac=c0f8029ce51b13141ae514a764559701fa8d6692a19df34fe60d830b9f75390b");
+    
+        /* doesn't allows the image to repeat */
+        background-repeat: no-repeat;
+    
+        /* scales the image proportionally to cover the background */
+        background-size: cover;
+    
+        /* centers the image in the center of the background */
+        background-position: center;
+    
+        /*sets the height of the body to 100viewport height */
+        height: 100vh;
+        
+    }
+    
+}
