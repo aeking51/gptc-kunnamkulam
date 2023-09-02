@@ -23,6 +23,7 @@ const letterExp = /^[a-zA-Z]+$/;
 
 const form = document.getElementById("ac-form")
 
+//input sections
 const name = document.getElementById("name")
 const email = document.getElementById("mail")
 const ph = document.getElementById("ph")
@@ -33,6 +34,9 @@ const prn = document.getElementById("prn")
 const dept = document.getElementById("dept")
 const password = document.getElementById("pass")
 
+
+
+//Warning Sections
 const name_error = document.getElementById("name-warn")
 const email_error = document.getElementById("mail-warn")
 const ph_error = document.getElementById("ph-warn")
